@@ -3,15 +3,21 @@ import clsx from 'clsx';
 interface ButtonProps {
   children: string;
   className?: string;
+  type?: 'button' | 'submit';
   onClickHandler?: () => void;
 }
 
 const baseStyle =
   'group inline-flex items-center justify-center rounded py-2 px-7 font-semibold focus:outline-none';
 
-export function ButtonSolid({ children, className }: ButtonProps) {
+export function ButtonSolid({
+  children,
+  className,
+  type = 'button',
+}: ButtonProps) {
   return (
     <button
+      type={type}
       className={clsx(
         baseStyle,
         className,
@@ -26,11 +32,13 @@ export function ButtonSolid({ children, className }: ButtonProps) {
 export function ButtonOutline({
   children,
   className,
+  type = 'button',
   onClickHandler,
 }: ButtonProps) {
   return (
     <button
       onClick={onClickHandler}
+      type={type}
       className={clsx(
         baseStyle,
         className,
