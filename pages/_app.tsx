@@ -1,6 +1,8 @@
 import '@/styles/globals.css';
-import type { AppProps } from 'next/app';
 import localFont from 'next/font/local';
+import type { AppProps } from 'next/app';
+
+import Layout from '@/components/Layout';
 
 const averta = localFont({
   src: [
@@ -19,19 +21,14 @@ const averta = localFont({
       weight: '700',
       style: 'normal',
     },
-    {
-      path: '../public/fonts/AvertaStd-ExtraBold.woff2',
-      weight: '800',
-      style: 'normal',
-    },
   ],
   variable: '--font-averta',
 });
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={`${averta.variable} font-sans`}>
+    <Layout className={`${averta.variable} font-sans`}>
       <Component {...pageProps} />
-    </main>
+    </Layout>
   );
 }
