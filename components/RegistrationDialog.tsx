@@ -69,7 +69,7 @@ function RegistrationDialog({ type = 'button' }: RegistrationDialogProps) {
       {type === 'link' && (
         <button
           onClick={openModal}
-          className='font-medium text-emerald-500 hover:underline underline-offset-4'
+          className='text-emerald-500 hover:underline underline-offset-4'
         >
           Get your free account
         </button>
@@ -114,7 +114,7 @@ function RegistrationDialog({ type = 'button' }: RegistrationDialogProps) {
                   </button>
                   <Dialog.Title
                     as='h3'
-                    className='text-lg font-semibold leading-6 text-slate-800 font-display'
+                    className='text-lg font-semibold leading-6 text-slate-800'
                   >
                     Join Catlab for free
                   </Dialog.Title>
