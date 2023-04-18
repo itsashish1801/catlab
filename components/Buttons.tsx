@@ -21,7 +21,7 @@ export function ButtonSolid({
       className={clsx(
         baseStyle,
         className,
-        'bg-slate-800 text-slate-50 hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-800 focus-visible:outline-2 focus-visible:outline-offset-2 '
+        'bg-slate-800 text-slate-50 hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-800 focus-visible:outline-2 focus-visible:outline-offset-2'
       )}
     >
       {children}

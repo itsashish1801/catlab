@@ -1,9 +1,10 @@
-import { ButtonOutline, ButtonSolid } from '@/components/Buttons';
+import { ButtonOutline } from '@/components/Buttons';
+import { LinkButton } from '@/components/Links';
 
 function Home() {
   return (
     <>
-      <header className='text-center my-24 lg:my-32'>
+      <header className='my-24 text-center lg:my-32'>
         <h1 className='max-w-4xl mx-auto text-5xl font-semibold tracking-tight text-slate-800 md:text-7xl'>
           Practising{' '}
           <span className='relative whitespace-nowrap text-emerald-500'>
@@ -27,11 +28,11 @@ function Home() {
         </p>
 
         <div className='flex justify-center mt-12 gap-x-12'>
-          <ButtonSolid>Sign in</ButtonSolid>
+          <LinkButton href='/signin'>Sign in</LinkButton>
           <ButtonOutline>Join for free</ButtonOutline>
         </div>
       </header>
-      <p className='pt-10 lg:pt-16 pb-4 text-center'>
+      <p className='pt-10 pb-4 text-center lg:pt-16'>
         Made with 💚 by{' '}
         <a
           href='https://itsashishsharma.in'

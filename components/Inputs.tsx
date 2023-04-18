@@ -41,7 +41,7 @@ export function TextInput({
           id={id}
           placeholder={placeholder}
           type={type}
-          className={`${baseStyles} ${error ? 'border-red-600' : ''}`}
+          className={baseStyles}
         />
       </div>
       {error && <div className='mt-1 text-sm text-red-600'>{error}</div>}

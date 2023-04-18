@@ -1,14 +1,15 @@
 import Link from 'next/link';
+
 import { Logo } from './Icons';
-import { ButtonSolid } from './Buttons';
+import { LinkButton } from './Links';
 
 function Navbar() {
   return (
     <nav className='flex items-center justify-between py-6 md:py-8'>
       <Link href='/' className='block focus:outline-none'>
-        <Logo className='h-8 w-auto' />
+        <Logo className='w-auto h-8' />
       </Link>
-      <ButtonSolid>Sign in</ButtonSolid>
+      <LinkButton href='/signin'>Sign in</LinkButton>
     </nav>
   );
 }
