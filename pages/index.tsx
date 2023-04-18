@@ -1,5 +1,6 @@
 import { ButtonOutline } from '@/components/Buttons';
 import { LinkButton } from '@/components/Links';
+import RegistrationDialog from '@/components/RegistrationDialog';
 
 function Home() {
   return (
@@ -29,7 +30,7 @@ function Home() {
 
         <div className='flex justify-center mt-12 gap-x-12'>
           <LinkButton href='/signin'>Sign in</LinkButton>
-          <ButtonOutline>Join for free</ButtonOutline>
+          <RegistrationDialog />
         </div>
       </header>
       <p className='pt-10 pb-4 text-center lg:pt-16'>

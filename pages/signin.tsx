@@ -4,6 +4,7 @@ import { Form, Formik } from 'formik';
 import { ButtonSolid } from '@/components/Buttons';
 import { Favicon } from '@/components/Icons';
 import { TextInput } from '@/components/Inputs';
+import RegistrationDialog from '@/components/RegistrationDialog';
 
 interface SignInForm {
   email: string;
@@ -29,11 +30,13 @@ function SignIn() {
 
   return (
     <div className='flex flex-col items-center max-w-md mx-auto mt-20 lg:mt-16'>
-      <Favicon className='h-8 w-8' />
+      <Favicon className='w-8 h-8' />
 
       <div className='text-center'>
         <h2 className='mt-6 text-2xl font-semibold'>Sign in to your account</h2>
-        <p className='mt-1 text-sm'>Or</p>
+        <div className='mt-1 text-sm'>
+          <span>Or</span> <RegistrationDialog type='link' />
+        </div>
       </div>
 
       <Formik
